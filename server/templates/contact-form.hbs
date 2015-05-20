@@ -89,7 +89,6 @@
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.cookie/1.4.1/jquery.cookie.min.js"></script>
-
     <script type="text/javascript">
       /**
        * Add Accept in all request
@@ -109,11 +108,6 @@
 
 
       $(function() {
-
-        if (sessionStorage['sistecontactSend']) {
-          success();
-        }
-
         function success() {
           $('.contact-success').show();
           $('.form-contact').hide();
@@ -158,7 +152,6 @@
             data: cm,
           })
           .done(function() {
-            sessionStorage['sistecontactSend'] = 'true';
             success();
           })
           .fail(function() {
