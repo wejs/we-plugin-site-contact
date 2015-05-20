@@ -1,0 +1,205 @@
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:20:43.696Z"}
+{"level":"info","message":"Creating the image upload directory: /home/a/projetos/plugins/we-plugin-site-contact/files/uploads/images/mini","timestamp":"2015-05-20T00:20:44.647Z"}
+{"level":"info","message":"Creating the image upload directory: /home/a/projetos/plugins/we-plugin-site-contact/files/uploads/images/thumbnail","timestamp":"2015-05-20T00:20:44.648Z"}
+{"level":"info","message":"Creating the image upload directory: /home/a/projetos/plugins/we-plugin-site-contact/files/uploads/images/medium","timestamp":"2015-05-20T00:20:44.648Z"}
+{"level":"info","message":"Creating the image upload directory: /home/a/projetos/plugins/we-plugin-site-contact/files/uploads/images/large","timestamp":"2015-05-20T00:20:44.648Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:20:44.684Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 564d9da991840fe","timestamp":"2015-05-20T00:20:44.999Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:21:42.509Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:21:43.401Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 dfda5271305b40a","timestamp":"2015-05-20T00:21:43.615Z"}
+{"name":"SequelizeValidationError","message":"Validation error: Validation isIP failed","errors":[{"message":"Validation isIP failed","type":"Validation error","path":"ip","value":"Validation isIP failed","__raw":"Validation isIP failed"}],"level":"error","timestamp":"2015-05-20T00:21:43.656Z"}
+{"name":"SequelizeValidationError","message":"response>","errors":[{"message":"Validation isIP failed","type":"Validation error","path":"ip","value":"Validation isIP failed","__raw":"Validation isIP failed"}],"level":"info","timestamp":"2015-05-20T00:21:43.661Z","messages":[]}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:23:43.717Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:23:44.614Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 aa292e544143b60","timestamp":"2015-05-20T00:23:44.831Z"}
+{"name":"SequelizeValidationError","message":"Validation error: Validation isIP failed","errors":[{"message":"Validation isIP failed","type":"Validation error","path":"ip","value":"Validation isIP failed","__raw":"Validation isIP failed"}],"level":"error","timestamp":"2015-05-20T00:23:44.870Z"}
+{"name":"SequelizeValidationError","message":"response>","errors":[{"message":"Validation isIP failed","type":"Validation error","path":"ip","value":"Validation isIP failed","__raw":"Validation isIP failed"}],"level":"info","timestamp":"2015-05-20T00:23:44.874Z","messages":[]}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:24:34.468Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:24:35.415Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 1cc801d4db0eccd","timestamp":"2015-05-20T00:24:35.622Z"}
+{"sitecontact":[{"id":1,"name":"Alberto Souza","email":"alberto.souza.99@gmail.com","phone":"1222312213121","message":"I whant contact you","ip":"208.80.154.224","updatedAt":"2015-05-20T00:24:35.000Z","createdAt":"2015-05-20T00:24:35.000Z"}],"meta":{},"messages":[],"level":"info","message":"response>","timestamp":"2015-05-20T00:24:35.673Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:24:58.496Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:24:59.391Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 ce854e22313b15e","timestamp":"2015-05-20T00:24:59.605Z"}
+{"sitecontact":[{"id":1,"name":"Alberto Souza","email":"alberto.souza.99@gmail.com","phone":"1222312213121","message":"I whant contact you","ip":"208.80.154.224","updatedAt":"2015-05-20T00:24:59.000Z","createdAt":"2015-05-20T00:24:59.000Z"}],"meta":{},"messages":[],"level":"info","message":"response>","timestamp":"2015-05-20T00:24:59.655Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:26:07.449Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:26:08.362Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 ae14c175f33d7ba","timestamp":"2015-05-20T00:26:08.579Z"}
+{"sitecontact":[{"id":1,"name":"Alberto Souza","email":"alberto.souza.99@gmail.com","phone":"1222312213121","message":"I whant contact you","ip":"208.80.154.224","updatedAt":"2015-05-20T00:26:08.000Z","createdAt":"2015-05-20T00:26:08.000Z"}],"meta":{},"messages":[],"level":"info","message":"response>","timestamp":"2015-05-20T00:26:08.631Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:26:51.647Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:26:52.495Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 6cb7064155c56d5","timestamp":"2015-05-20T00:26:52.706Z"}
+{"level":"info","message":"response>","timestamp":"2015-05-20T00:26:52.752Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:27:25.076Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:27:25.930Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 315a421725d797e","timestamp":"2015-05-20T00:27:26.147Z"}
+{"level":"info","message":"response>","timestamp":"2015-05-20T00:27:26.194Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:27:42.105Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:27:42.944Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 2dbfcb6552f045a","timestamp":"2015-05-20T00:27:43.156Z"}
+{"level":"info","message":"response> {} Error: The parameter (value: 127.0.0.1) is no Object.<br> &nbsp; &nbsp;at validate (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/lib/utils/parameter-validator.js:27:9)<br> &nbsp; &nbsp;at Object.module.exports.check (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/lib/utils/parameter-validator.js:53:10)<br> &nbsp; &nbsp;at Object.module.exports.validateParameter (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/lib/utils.js:660:31)<br> &nbsp; &nbsp;at module.exports.Model.create (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/lib/model.js:1059:11)<br> &nbsp; &nbsp;at Controller.module.exports.create (/home/a/projetos/plugins/we-plugin-site-contact/server/controllers/sitecontact.js:11:22)<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/router/layer.js:82:5)<br> &nbsp; &nbsp;at next (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/router/route.js:110:13)<br> &nbsp; &nbsp;at Route.dispatch (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/router/route.js:91:3)<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/router/layer.js:82:5)<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/node_modules/express/lib/router/index.js:267:22<br> &nbsp; &nbsp;at Function.proto.process_params (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/router/index.js:321:12)<br> &nbsp; &nbsp;at next (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/router/index.js:261:10)<br> &nbsp; &nbsp;at next (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/router/route.js:100:14)<br> &nbsp; &nbsp;at Object.membershipCanMiddleware (/home/a/projetos/libs/3_we/we-core/lib/acl/group/index.js:53:33)<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/router/layer.js:82:5)<br> &nbsp; &nbsp;at next (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/router/route.js:110:13)<br> &nbsp; &nbsp;at Object.usercanMiddleware (/home/a/projetos/libs/3_we/we-core/lib/acl/index.js:89:12)<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/router/layer.js:82:5)<br> &nbsp; &nbsp;at next (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/router/route.js:110:13)<br> &nbsp; &nbsp;at null.&lt;anonymous&gt; (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/lib/promise.js:242:11)<br> &nbsp; &nbsp;at tryCatch1 (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/node_modules/bluebird/js/main/util.js:45:21)<br> &nbsp; &nbsp;at Promise._callHandler (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:571:13)<br> &nbsp; &nbsp;at Promise._settlePromiseFromHandler (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:581:18)<br> &nbsp; &nbsp;at Promise._settlePromiseAt (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:713:18)<br> &nbsp; &nbsp;at Promise._settlePromiseAt (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/lib/promise.js:76:18)<br> &nbsp; &nbsp;at Promise._settlePromises (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/node_modules/bluebird/js/main/promise.js:854:14)<br> &nbsp; &nbsp;at Async._consumeFunctionBuffer (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/node_modules/bluebird/js/main/async.js:85:12)<br> &nbsp; &nbsp;at Async.consumeFunctionBuffer (/home/a/projetos/libs/3_we/we-core/node_modules/sequelize/node_modules/bluebird/js/main/async.js:40:14)<br> &nbsp; &nbsp;at process._tickCallback (node.js:442:13)\n","timestamp":"2015-05-20T00:27:43.204Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:28:03.936Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:28:04.784Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 b76ce0662d39653","timestamp":"2015-05-20T00:28:04.997Z"}
+{"level":"info","message":"response> { sitecontact: \n   [ { id: 1,\n       name: 'Alberto Souza',\n       email: 'alberto.souza.99@gmail.com',\n       phone: '1222312213121',\n       message: 'I whant contact you',\n       ip: '127.0.0.1',\n       updatedAt: '2015-05-20T00:28:05.000Z',\n       createdAt: '2015-05-20T00:28:05.000Z' } ],\n  meta: {},\n  messages: [] } {\"sitecontact\":[{\"id\":1,\"name\":\"Alberto Souza\",\"email\":\"alberto.souza.99@gmail.com\",\"phone\":\"1222312213121\",\"message\":\"I whant contact you\",\"ip\":\"127.0.0.1\",\"updatedAt\":\"2015-05-20T00:28:05.000Z\",\"createdAt\":\"2015-05-20T00:28:05.000Z\"}],\"meta\":{},\"messages\":[]}","timestamp":"2015-05-20T00:28:05.040Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:28:41.956Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:28:42.787Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 4451b0b2634b656","timestamp":"2015-05-20T00:28:42.999Z"}
+{"sitecontact":[{"id":1,"name":"Alberto Souza","email":"alberto.souza.99@gmail.com","phone":"1222312213121","message":"I whant contact you","ip":"127.0.0.1","updatedAt":"2015-05-20T00:28:43.000Z","createdAt":"2015-05-20T00:28:43.000Z"}],"meta":{},"messages":[],"level":"info","message":"response>","timestamp":"2015-05-20T00:28:43.035Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:28:52.691Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:28:53.529Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 0ec91ba4ce03402","timestamp":"2015-05-20T00:28:53.833Z"}
+{"sitecontact":[{"id":1,"name":"Alberto Souza","email":"alberto.souza.99@gmail.com","phone":"1222312213121","message":"I whant contact you","ip":"127.0.0.1","updatedAt":"2015-05-20T00:28:53.000Z","createdAt":"2015-05-20T00:28:53.000Z"}],"meta":{},"messages":[],"level":"info","message":"response>","timestamp":"2015-05-20T00:28:53.861Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:29:44.918Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:29:45.770Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 aadd6f9715bfe91","timestamp":"2015-05-20T00:29:45.984Z"}
+{"sitecontact":[{"id":1,"name":"Alberto Souza","email":"alberto.souza.99@gmail.com","phone":"1222312213121","message":"I whant contact you","ip":"127.0.0.1","updatedAt":"2015-05-20T00:29:46.000Z","createdAt":"2015-05-20T00:29:46.000Z"}],"meta":{},"messages":[],"level":"info","message":"response>","timestamp":"2015-05-20T00:29:46.012Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:30:07.805Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:30:08.660Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 92f37830f4cbb30","timestamp":"2015-05-20T00:30:08.874Z"}
+{"sitecontact":[{"id":1,"name":"Alberto Souza","email":"alberto.souza.99@gmail.com","phone":"1222312213121","message":"I whant contact you","ip":"127.0.0.1","updatedAt":"2015-05-20T00:30:08.000Z","createdAt":"2015-05-20T00:30:08.000Z"}],"meta":{},"messages":[],"level":"info","message":"response>","timestamp":"2015-05-20T00:30:08.908Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:53:48.611Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:53:49.456Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 93a9edac9a4865b","timestamp":"2015-05-20T00:53:49.673Z"}
+{"level":"info","message":"response>","timestamp":"2015-05-20T00:53:49.707Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:54:08.130Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:54:08.996Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 1e9977c026f8e7b","timestamp":"2015-05-20T00:54:09.215Z"}
+{"level":"info","message":"response>","timestamp":"2015-05-20T00:54:09.251Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T00:54:30.841Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T00:54:31.679Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 8da2677343207a9","timestamp":"2015-05-20T00:54:31.894Z"}
+{"level":"info","message":"response> Error: Failed to lookup view &quot;/home/a/projetos/plugins/we-plugin-site-contact/server/templates/sitecontact/create&quot; in views directory &quot;/home/a/projetos/plugins/we-plugin-site-contact/node_modules/we-theme-site-wejs/templates/server&quot;<br> &nbsp; &nbsp;at EventEmitter.app.render (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/application.js:555:17)<br> &nbsp; &nbsp;at ServerResponse.res.render (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/response.js:938:7)<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/lib/themeEngine/index.js:82:18<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/lib/themeEngine/index.js:52:18<br> &nbsp; &nbsp;at Object.oncomplete (fs.js:108:15)\n","timestamp":"2015-05-20T00:54:31.926Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T01:45:36.977Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T01:45:37.851Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 f9506137b8182d7","timestamp":"2015-05-20T01:45:38.093Z"}
+{"level":"info","message":"response> {\"sitecontact\":[{\"id\":1,\"name\":\"Alberto Souza\",\"email\":\"alberto.souza.99@gmail.com\",\"phone\":\"1222312213121\",\"message\":\"I whant contact you\",\"ip\":\"127.0.0.1\",\"updatedAt\":\"2015-05-20T01:45:38.000Z\",\"createdAt\":\"2015-05-20T01:45:38.000Z\"}],\"meta\":{},\"messages\":[]}","timestamp":"2015-05-20T01:45:38.133Z"}
+{"level":"info","message":"response> Error: Failed to lookup view &quot;/home/a/projetos/plugins/we-plugin-site-contact/server/templates/sitecontact/create&quot; in views directory &quot;/home/a/projetos/plugins/we-plugin-site-contact/node_modules/we-theme-site-wejs/templates/server&quot;<br> &nbsp; &nbsp;at EventEmitter.app.render (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/application.js:555:17)<br> &nbsp; &nbsp;at ServerResponse.res.render (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/response.js:938:7)<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/lib/themeEngine/index.js:82:18<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/lib/themeEngine/index.js:52:18<br> &nbsp; &nbsp;at Object.oncomplete (fs.js:108:15)\n","timestamp":"2015-05-20T01:45:38.147Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T01:45:58.198Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T01:45:59.040Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 0d37abcd543c9ff","timestamp":"2015-05-20T01:45:59.254Z"}
+{"level":"info","message":"response> Error: Failed to lookup view &quot;/home/a/projetos/plugins/we-plugin-site-contact/server/templates/sitecontact/create&quot; in views directory &quot;/home/a/projetos/plugins/we-plugin-site-contact/node_modules/we-theme-site-wejs/templates/server&quot;<br> &nbsp; &nbsp;at EventEmitter.app.render (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/application.js:555:17)<br> &nbsp; &nbsp;at ServerResponse.res.render (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/response.js:938:7)<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/lib/themeEngine/index.js:82:18<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/lib/themeEngine/index.js:52:18<br> &nbsp; &nbsp;at Object.oncomplete (fs.js:108:15)\n","timestamp":"2015-05-20T01:45:59.294Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T01:54:36.290Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T01:54:37.150Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 b188f20e80d0687","timestamp":"2015-05-20T01:54:37.365Z"}
+{"level":"error","message":"Template not found in theme or plugin path: sitecontact/create","timestamp":"2015-05-20T01:54:37.401Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T01:55:14.414Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T01:55:15.292Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 5eb90f8132930d8","timestamp":"2015-05-20T01:55:15.512Z"}
+{"level":"error","message":"Template not found in theme or plugin path: sitecontact/create","timestamp":"2015-05-20T01:55:15.552Z"}
+{"level":"info","message":"response> Error: Failed to lookup view &quot;undefined&quot; in views directory &quot;/home/a/projetos/plugins/we-plugin-site-contact/node_modules/we-theme-site-wejs/templates/server&quot;<br> &nbsp; &nbsp;at EventEmitter.app.render (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/application.js:555:17)<br> &nbsp; &nbsp;at ServerResponse.res.render (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/response.js:938:7)<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/lib/themeEngine/index.js:99:18<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/lib/themeEngine/index.js:60:24<br> &nbsp; &nbsp;at Object.oncomplete (fs.js:108:15)\n","timestamp":"2015-05-20T01:55:15.558Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T01:55:57.017Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T01:55:57.877Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 3e6b5163f34db86","timestamp":"2015-05-20T01:55:58.100Z"}
+{"level":"error","message":"Serverside template not found in theme or plugin path: sitecontact/create","timestamp":"2015-05-20T01:55:58.140Z"}
+{"level":"info","message":"response> Error: Failed to lookup view &quot;undefined&quot; in views directory &quot;/home/a/projetos/plugins/we-plugin-site-contact/node_modules/we-theme-site-wejs/templates/server&quot;<br> &nbsp; &nbsp;at EventEmitter.app.render (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/application.js:555:17)<br> &nbsp; &nbsp;at ServerResponse.res.render (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/response.js:938:7)<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/lib/themeEngine/index.js:99:18<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/lib/themeEngine/index.js:60:24<br> &nbsp; &nbsp;at Object.oncomplete (fs.js:108:15)\n","timestamp":"2015-05-20T01:55:58.146Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T01:57:20.246Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T01:57:21.128Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 8e595327dca218d","timestamp":"2015-05-20T01:57:21.346Z"}
+{"level":"error","message":"Serverside template not found in theme or plugin path: sitecontact/create","timestamp":"2015-05-20T01:57:21.383Z"}
+{"level":"info","message":"response> Error: Failed to lookup view &quot;undefined&quot; in views directory &quot;/home/a/projetos/plugins/we-plugin-site-contact/node_modules/we-theme-site-wejs/templates/server&quot;<br> &nbsp; &nbsp;at EventEmitter.app.render (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/application.js:555:17)<br> &nbsp; &nbsp;at ServerResponse.res.render (/home/a/projetos/libs/3_we/we-core/node_modules/express/lib/response.js:938:7)<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/lib/themeEngine/index.js:99:18<br> &nbsp; &nbsp;at /home/a/projetos/libs/3_we/we-core/lib/themeEngine/index.js:60:24<br> &nbsp; &nbsp;at Object.oncomplete (fs.js:108:15)\n","timestamp":"2015-05-20T01:57:21.389Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T03:15:55.239Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T03:15:56.132Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 3893b03128c2060","timestamp":"2015-05-20T03:15:56.383Z"}
+{"level":"error","message":"sitecontact:create SiteContact: Email template not found:","timestamp":"2015-05-20T03:15:56.409Z"}
+{"level":"error","message":"sitecontact:create SiteContact: Email template not found:","timestamp":"2015-05-20T03:15:56.426Z"}
+{"level":"info","message":"response> <!DOCTYPE html>\n<html>\n  <head>\n    <title> | We test</title>\n\n    <meta property=\"og:site_name\" content=\"We test\"><meta property=\"og:title\" content=\"We test\"><meta property=\"application-name\" content=\"We test\"><meta property=\"application-url\" content=\"http://localhost:9800\">\n\n    <!-- Viewport mobile tag for sensible mobile support -->\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\" />\n    <!--[if lt IE 9]>\n    <script src=\"http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js\"></script>\n    <![endif]-->\n\n    <meta name=\"csrf-token\" content=\"<%= _csrf %>\" />\n\n    <link href=\"/public/plugin/we-core/files/css/app.css\" rel=\"stylesheet\" type=\"text/css\"><link href=\"/public/theme/we-theme-site-wejs/style.css\" rel=\"stylesheet\" type=\"text/css\">\n\n  </head>\n  <body>\n    <noscript>\n      Server Error\n    </noscript>\n\n    <script type=\"text/javascript\"> window.WE_BOOTSTRAP_CONFIG={\"version\":\"2\",\"env\":\"test\",\"client\":{\"publicVars\":{},\"log\":{},\"language\":\"pt-br\"},\"appName\":\"We test\",\"appLogo\":\"/public/plugin/we-core/files/images/logo-small.png\",\"defaultUserAvatar\":\"/home/a/projetos/plugins/we-plugin-site-contact/node_modules/we-core/files/public/images/avatars/user-avatar.png\",\"auth\":{\"cookieDomain\":null,\"cookieName\":\"weoauth\",\"cookieSecure\":false,\"accessTokenTime\":300000000,\"oauth\":{\"server\":null}},\"acl\":{\"disabled\":true},\"groupRoles\":[\"manager\",\"moderator\",\"member\"],\"groupPermissions\":{\"public\":{},\"private\":{\"create_post\":{\"title\":\"Create post\",\"description\":\"Create one post in group\",\"roles\":[\"mananger\",\"moderator\",\"member\"]},\"manage_members\":{\"title\":\"Manage members\",\"description\":\"Manage members in groups\",\"roles\":[\"mananger\",\"moderator\"]}},\"hidden\":{\"create_post\":{\"title\":\"Create post\",\"description\":\"Create one post in group\",\"roles\":[\"mananger\",\"moderator\",\"member\"]}}},\"locales\":[\"en-us\",\"pt-br\"]}</script>\n    <script type=\"text/javascript\" src=\"/public/tpls.hbs.js\"></script><script type=\"text/javascript\" src=\"/api/v1/translations.js\"></script>\n    <!-- Load ember.js models -->\n    <script type=\"text/javascript\" src=\"/api/v1/models/emberjs\"></script>\n  </body>\n</html>\n","timestamp":"2015-05-20T03:15:56.452Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T03:16:32.142Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T03:16:33.035Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 b8e8a2d483881c5","timestamp":"2015-05-20T03:16:33.255Z"}
+{"level":"error","message":"sitecontact:create SiteContact: Email template not found:","timestamp":"2015-05-20T03:16:33.284Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T03:23:32.251Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T03:23:33.146Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 1641eec75498445","timestamp":"2015-05-20T03:23:33.409Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T03:24:17.527Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T03:24:18.424Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 a691526c60b2016","timestamp":"2015-05-20T03:24:18.636Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T03:24:28.162Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T03:24:29.009Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 93db400bf41c025","timestamp":"2015-05-20T03:24:29.226Z"}
+{"level":"warn","message":"---- email.showDebugEmail ----","timestamp":"2015-05-20T03:24:29.353Z"}
+{"level":"warn","message":"---- Email options: ----","timestamp":"2015-05-20T03:24:29.353Z"}
+{"subject":"we.email.sitecontact.subject","to":"We.js project <contato@wejs.org>","from":"We.js project <contato@wejs.org>","html":"<p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<p>\nWe test\n</p>","text":"text.handlebars","level":"info","message":"","timestamp":"2015-05-20T03:24:29.355Z"}
+{"level":"warn","message":"---- Displaying the html email that would be sent ----","timestamp":"2015-05-20T03:24:29.355Z"}
+{"level":"info","message":"HTML:\n <p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<p>\nWe test\n</p>","timestamp":"2015-05-20T03:24:29.355Z"}
+{"level":"warn","message":"---- Displaying the text email that would be sent ----","timestamp":"2015-05-20T03:24:29.356Z"}
+{"level":"info","message":"text:\n text.handlebars","timestamp":"2015-05-20T03:24:29.356Z"}
+{"level":"warn","message":"----------------------------- END --------------------------","timestamp":"2015-05-20T03:24:29.356Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T03:25:28.040Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T03:25:28.899Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 92240d79a82501a","timestamp":"2015-05-20T03:25:29.110Z"}
+{"level":"warn","message":"---- email.showDebugEmail ----","timestamp":"2015-05-20T03:25:29.199Z"}
+{"level":"warn","message":"---- Email options: ----","timestamp":"2015-05-20T03:25:29.199Z"}
+{"subject":"we.email.sitecontact.subject","to":"We.js project <contato@wejs.org>","from":"Alberto Souza <alberto.souza.99@gmail.com>","html":"<p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<p>\nWe test\n</p>","text":"text.handlebars","level":"info","message":"","timestamp":"2015-05-20T03:25:29.200Z"}
+{"level":"warn","message":"---- Displaying the html email that would be sent ----","timestamp":"2015-05-20T03:25:29.201Z"}
+{"level":"info","message":"HTML:\n <p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<p>\nWe test\n</p>","timestamp":"2015-05-20T03:25:29.201Z"}
+{"level":"warn","message":"---- Displaying the text email that would be sent ----","timestamp":"2015-05-20T03:25:29.201Z"}
+{"level":"info","message":"text:\n text.handlebars","timestamp":"2015-05-20T03:25:29.201Z"}
+{"level":"warn","message":"----------------------------- END --------------------------","timestamp":"2015-05-20T03:25:29.201Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T03:26:03.587Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T03:26:04.446Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 ed099c18ad21dbc","timestamp":"2015-05-20T03:26:04.663Z"}
+{"level":"warn","message":"---- email.showDebugEmail ----","timestamp":"2015-05-20T03:26:04.754Z"}
+{"level":"warn","message":"---- Email options: ----","timestamp":"2015-05-20T03:26:04.754Z"}
+{"subject":"we.email.sitecontact.subject","to":"We.js project <contato@wejs.org>","from":"Alberto Souza <alberto.souza.99@gmail.com>","html":"<p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<br><br>\n<p>We test\n</p>","text":"text.handlebars","level":"info","message":"","timestamp":"2015-05-20T03:26:04.756Z"}
+{"level":"warn","message":"---- Displaying the html email that would be sent ----","timestamp":"2015-05-20T03:26:04.756Z"}
+{"level":"info","message":"HTML:\n <p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<br><br>\n<p>We test\n</p>","timestamp":"2015-05-20T03:26:04.756Z"}
+{"level":"warn","message":"---- Displaying the text email that would be sent ----","timestamp":"2015-05-20T03:26:04.756Z"}
+{"level":"info","message":"text:\n text.handlebars","timestamp":"2015-05-20T03:26:04.756Z"}
+{"level":"warn","message":"----------------------------- END --------------------------","timestamp":"2015-05-20T03:26:04.756Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T03:26:50.235Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T03:26:51.091Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 b32e62a2910048e","timestamp":"2015-05-20T03:26:51.301Z"}
+{"level":"warn","message":"---- email.showDebugEmail ----","timestamp":"2015-05-20T03:26:51.394Z"}
+{"level":"warn","message":"---- Email options: ----","timestamp":"2015-05-20T03:26:51.395Z"}
+{"subject":"we.email.sitecontact.subject","to":"We.js project <contato@wejs.org>","from":"Alberto Souza <alberto.souza.99@gmail.com>","html":"<p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<br><br>\n<p>We test\n</p>","text":"You have a new site contact message:\n\nI whant contact you\n\nfrom Alberto Souza with email alberto.souza.99@gmail.com\n\n\nWe test","level":"info","message":"","timestamp":"2015-05-20T03:26:51.396Z"}
+{"level":"warn","message":"---- Displaying the html email that would be sent ----","timestamp":"2015-05-20T03:26:51.396Z"}
+{"level":"info","message":"HTML:\n <p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<br><br>\n<p>We test\n</p>","timestamp":"2015-05-20T03:26:51.397Z"}
+{"level":"warn","message":"---- Displaying the text email that would be sent ----","timestamp":"2015-05-20T03:26:51.397Z"}
+{"level":"info","message":"text:\n You have a new site contact message:\n\nI whant contact you\n\nfrom Alberto Souza with email alberto.souza.99@gmail.com\n\n\nWe test","timestamp":"2015-05-20T03:26:51.397Z"}
+{"level":"warn","message":"----------------------------- END --------------------------","timestamp":"2015-05-20T03:26:51.397Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T03:27:16.605Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T03:27:17.486Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 84acce43dfa872e","timestamp":"2015-05-20T03:27:17.701Z"}
+{"level":"warn","message":"---- email.showDebugEmail ----","timestamp":"2015-05-20T03:27:17.792Z"}
+{"level":"warn","message":"---- Email options: ----","timestamp":"2015-05-20T03:27:17.793Z"}
+{"subject":"we.email.sitecontact.subject","to":"We.js project <contato@wejs.org>","from":"Alberto Souza <alberto.souza.99@gmail.com>","html":"<p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<br><br>\n<p>We test\n</p>","text":"You have a new site contact message:\n----\n\nI whant contact you\n\n----\n\nfrom Alberto Souza with email alberto.souza.99@gmail.com\n\n\nWe test","level":"info","message":"","timestamp":"2015-05-20T03:27:17.794Z"}
+{"level":"warn","message":"---- Displaying the html email that would be sent ----","timestamp":"2015-05-20T03:27:17.794Z"}
+{"level":"info","message":"HTML:\n <p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<br><br>\n<p>We test\n</p>","timestamp":"2015-05-20T03:27:17.794Z"}
+{"level":"warn","message":"---- Displaying the text email that would be sent ----","timestamp":"2015-05-20T03:27:17.795Z"}
+{"level":"info","message":"text:\n You have a new site contact message:\n----\n\nI whant contact you\n\n----\n\nfrom Alberto Souza with email alberto.souza.99@gmail.com\n\n\nWe test","timestamp":"2015-05-20T03:27:17.795Z"}
+{"level":"warn","message":"----------------------------- END --------------------------","timestamp":"2015-05-20T03:27:17.795Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T03:27:26.353Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T03:27:27.197Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 81164bb91f2c817","timestamp":"2015-05-20T03:27:27.412Z"}
+{"level":"warn","message":"---- email.showDebugEmail ----","timestamp":"2015-05-20T03:27:27.504Z"}
+{"level":"warn","message":"---- Email options: ----","timestamp":"2015-05-20T03:27:27.504Z"}
+{"subject":"we.email.sitecontact.subject","to":"We.js project <contato@wejs.org>","from":"Alberto Souza <alberto.souza.99@gmail.com>","html":"<p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<br><br>\n<p>We test\n</p>","text":"You have a new site contact message:\n\nI whant contact you\n\nfrom Alberto Souza with email alberto.souza.99@gmail.com\n\n\nWe test","level":"info","message":"","timestamp":"2015-05-20T03:27:27.506Z"}
+{"level":"warn","message":"---- Displaying the html email that would be sent ----","timestamp":"2015-05-20T03:27:27.506Z"}
+{"level":"info","message":"HTML:\n <p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<br><br>\n<p>We test\n</p>","timestamp":"2015-05-20T03:27:27.506Z"}
+{"level":"warn","message":"---- Displaying the text email that would be sent ----","timestamp":"2015-05-20T03:27:27.506Z"}
+{"level":"info","message":"text:\n You have a new site contact message:\n\nI whant contact you\n\nfrom Alberto Souza with email alberto.souza.99@gmail.com\n\n\nWe test","timestamp":"2015-05-20T03:27:27.506Z"}
+{"level":"warn","message":"----------------------------- END --------------------------","timestamp":"2015-05-20T03:27:27.507Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T03:27:40.914Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T03:27:41.759Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 312c3298754adfd","timestamp":"2015-05-20T03:27:41.974Z"}
+{"level":"warn","message":"---- email.showDebugEmail ----","timestamp":"2015-05-20T03:27:42.075Z"}
+{"level":"warn","message":"---- Email options: ----","timestamp":"2015-05-20T03:27:42.076Z"}
+{"subject":"we.email.sitecontact.subject","to":"We.js project <contato@wejs.org>","from":"Alberto Souza <alberto.souza.99@gmail.com>","html":"<p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<br><br>\n<p>We test\n</p>","text":"\nYou have a new site contact message:\n\nI whant contact you\n\nfrom Alberto Souza with email alberto.souza.99@gmail.com\n\n\nWe test","level":"info","message":"","timestamp":"2015-05-20T03:27:42.077Z"}
+{"level":"warn","message":"---- Displaying the html email that would be sent ----","timestamp":"2015-05-20T03:27:42.077Z"}
+{"level":"info","message":"HTML:\n <p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<br><br>\n<p>We test\n</p>","timestamp":"2015-05-20T03:27:42.077Z"}
+{"level":"warn","message":"---- Displaying the text email that would be sent ----","timestamp":"2015-05-20T03:27:42.077Z"}
+{"level":"info","message":"text:\n \nYou have a new site contact message:\n\nI whant contact you\n\nfrom Alberto Souza with email alberto.souza.99@gmail.com\n\n\nWe test","timestamp":"2015-05-20T03:27:42.078Z"}
+{"level":"warn","message":"----------------------------- END --------------------------","timestamp":"2015-05-20T03:27:42.078Z"}
+{"level":"info","message":"2 plugins loaded: we-core,project","timestamp":"2015-05-20T03:28:33.826Z"}
+{"level":"info","message":"Listening on port 9800","timestamp":"2015-05-20T03:28:34.698Z"}
+{"level":"info","message":"AuthController:login: user autheticated: 1 6f895087922fe26","timestamp":"2015-05-20T03:28:34.913Z"}
+{"level":"warn","message":"---- email.showDebugEmail ----","timestamp":"2015-05-20T03:28:35.014Z"}
+{"level":"warn","message":"---- Email options: ----","timestamp":"2015-05-20T03:28:35.015Z"}
+{"subject":"we.email.sitecontact.subject","to":"We.js project <contato@wejs.org>","from":"Alberto Souza <alberto.souza.99@gmail.com>","html":"<p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<br><br>\n<p>We test\n</p>","text":"You have a new site contact message:\n\nI whant contact you\n\nfrom Alberto Souza with email alberto.souza.99@gmail.com\n\nWe test","level":"info","message":"","timestamp":"2015-05-20T03:28:35.016Z"}
+{"level":"warn","message":"---- Displaying the html email that would be sent ----","timestamp":"2015-05-20T03:28:35.016Z"}
+{"level":"info","message":"HTML:\n <p>You have a new site contact message:</p>\n<br>\n<p>I whant contact you</p>\n<br>\n<p>from Alberto Souza with email alberto.souza.99@gmail.com</p>\n\n<br><br>\n<p>We test\n</p>","timestamp":"2015-05-20T03:28:35.017Z"}
+{"level":"warn","message":"---- Displaying the text email that would be sent ----","timestamp":"2015-05-20T03:28:35.017Z"}
+{"level":"info","message":"text:\n You have a new site contact message:\n\nI whant contact you\n\nfrom Alberto Souza with email alberto.souza.99@gmail.com\n\nWe test","timestamp":"2015-05-20T03:28:35.017Z"}
+{"level":"warn","message":"----------------------------- END --------------------------","timestamp":"2015-05-20T03:28:35.017Z"}
