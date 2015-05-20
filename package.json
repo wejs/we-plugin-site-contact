@@ -17,6 +17,7 @@
     "jshint": "^2.7.0",
     "mocha": "^2.2.5",
     "supertest": "^1.0.1",
+    "we-core": "^0.3.19",
     "we-test-tools": "^0.3.0",
     "we-theme-admin-default": "^0.3.1",
     "we-theme-site-wejs": "^0.3.8"
