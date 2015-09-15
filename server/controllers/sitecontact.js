@@ -7,9 +7,7 @@ module.exports = {
     req.body.ip = req.ip;
 
     res.locals.Model.create(req.body)
-    .done(function(err, record) {
-      if (err) return res.serverError(err);
-
+    .then(function(record) {
 
       var templateVariables = {
         record: record,
@@ -17,7 +15,6 @@ module.exports = {
           name: we.config.appName
         }
       };
-
 
       if (!we.config.email.mailOptions.from) {
         we.log.warn('we.config.email.emailOptions.from is required to send a sitecontact email.');
@@ -49,7 +46,7 @@ module.exports = {
 
         return res.created(record);
       });
-    });
+    }).catch(res.queryError);
   },
   contactIframe: function contactIframe(req, res) {
     var we = req.getWe();
