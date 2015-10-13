@@ -1,7 +1,7 @@
 {
   "name": "we-plugin-site-contact",
   "description": "We.js site contact",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "npm prune",
