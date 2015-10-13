@@ -42,13 +42,13 @@ module.exports = function loadPlugin(projectPath, Plugin) {
     'put /sitecontact/:id([0-9]+)': {
       controller    : 'sitecontact',
       model         : 'sitecontact',
-      action        : 'update',
+      action        : 'edit',
       permission    : 'manage_contact_message'
     },
     'delete /sitecontact/:id([0-9]+)': {
       controller    : 'sitecontact',
       model         : 'sitecontact',
-      action        : 'destroy',
+      action        : 'delete',
       permission    : 'manage_contact_message'
     },
 
