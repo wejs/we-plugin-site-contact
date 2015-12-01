@@ -2,23 +2,21 @@
   "name": "we-plugin-site-contact",
   "description": "We.js site contact",
   "version": "0.3.2",
-  "main": "lib/index.js",
+  "main": "plugin.js",
   "scripts": {
     "prepublish": "npm prune",
-    "lint": "./node_modules/.bin/jshint .",
     "test": "NODE_ENV=test LOG_LV=info ./node_modules/.bin/mocha test/bootstrap.js test/**/*.test.js"
   },
   "dependencies": {
     "fs-extra": "^0.18.3"
   },
   "devDependencies": {
-    "jshint": "^2.7.0",
     "mocha": "^2.2.5",
     "supertest": "^1.0.1",
-    "we-core": "^0.3.19",
-    "we-test-tools": "^0.3.0",
-    "we-theme-admin-default": "^0.3.1",
-    "we-theme-site-wejs": "^0.3.8"
+    "we-core": "^0.3",
+    "we-test-tools": "^0.3",
+    "we-theme-admin-default": "^0.3",
+    "we-theme-site-wejs": "^0.3"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
