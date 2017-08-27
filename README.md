@@ -1,10 +1,8 @@
 # we-plugin-site-contact
 
+We.js site contact plugin for add the /sitecontact page and one contact widget
 
-[![Dependency Status](https://david-dm.org/wejs/we-plugin-site-contact.png)](https://david-dm.org/wejs/we-plugin-site-contact)
-[![Build Status](https://travis-ci.org/wejs/we-plugin-site-contact.svg?branch=0.3.x)](https://travis-ci.org/wejs/we-plugin-site-contact)
-
-##Features
+## Features
 
 - Contact form iframe
 - Contact email
@@ -17,10 +15,10 @@ after clone and install npm packages:
 npm test
 ```
 
-##### For run only 'Chat' test use:
+##### For run only 'Contact' test use:
 
 ```sh
-NODE_ENV=test LOG_LV=info ./node_modules/.bin/mocha test/bootstrap.js test/**/*.test.js -g 'Chat'
+NODE_ENV=test LOG_LV=info ./node_modules/.bin/mocha test/bootstrap.js test/**/*.test.js -g 'contact'
 ```
 
 ##### For run the javascript linter
@@ -34,4 +32,4 @@ npm run lint
 
 ## Copyright and license
 
-Copyright 2013-2014 Alberto Souza <alberto.souza.dev@gmail.com> and contributors , under [the MIT license](LICENSE).
+Copyright Alberto Souza <contact@albertosouza.net> and contributors , under [the MIT license](LICENSE).

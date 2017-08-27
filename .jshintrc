@@ -3,11 +3,10 @@
 , "browser": true
 , "camelcase": true
 , "curly": false
-, "devel": false
 , "devel": true
-, "eqeqeq": true
+, "eqeqeq": false
 , "eqnull": true
-, "es5": false
+, "esversion": 6
 , "evil": false
 , "immed": false
 , "indent": 2

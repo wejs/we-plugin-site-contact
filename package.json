@@ -1,30 +1,31 @@
 {
   "name": "we-plugin-site-contact",
-  "description": "We.js site contact",
-  "version": "0.3.2",
+  "description": "We.js site contact plugin with contact form and contact widget",
+  "version": "1.0.0",
   "main": "plugin.js",
   "scripts": {
     "prepublish": "npm prune",
     "test": "NODE_ENV=test LOG_LV=info ./node_modules/.bin/mocha test/bootstrap.js test/**/*.test.js"
   },
   "dependencies": {
-    "fs-extra": "^0.18.3"
+    "fs-extra": "^4.0.1"
   },
   "devDependencies": {
-    "mocha": "^2.2.5",
-    "supertest": "^1.0.1",
-    "we-core": "^0.3",
-    "we-test-tools": "^0.3",
-    "we-theme-admin-default": "^0.3",
+    "express-mysql-session": "^1.2.0",
+    "mocha": "^3.5.0",
+    "supertest": "^3.0.0",
+    "we-core": "wejs/we-core",
+    "we-test-tools": "wejs/we-test-tools",
+    "we-theme-admin-default": "^1.0",
     "we-theme-site-wejs": "^0.3"
   },
-  "publishConfig": {
-    "registry": "http://registry.npmjs.org"
-  },
-  "author": "Alberto Souza <alberto.souza.dev@gmail.com>",
+  "author": "Alberto Souza <contact@albertosouza.net>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@github.com:wejs/we-plugin-site-contact.git"
-  }
+  },
+  "keywords": [
+    "wejs-plugin"
+  ]
 }
