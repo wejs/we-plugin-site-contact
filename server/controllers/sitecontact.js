@@ -1,15 +1,15 @@
 module.exports = {
-  create: function(req, res) {
-    var we = req.getWe();
+  create(req, res) {
+    const we = req.we;
 
     if (!req.ip) return res.badRequest();
 
     req.body.ip = req.ip;
 
     res.locals.Model.create(req.body)
-    .then(function(record) {
+    .then( (record)=> {
 
-      var templateVariables = {
+      const templateVariables = {
         record: record,
         site: {
           name: we.config.appName
@@ -21,15 +21,13 @@ module.exports = {
         return res.created(record);
       }
 
-      var options = {
+      const options = {
         subject: req.__('we.email.sitecontact.subject', templateVariables),
         to: we.config.email.mailOptions.from,
         from: record.name + ' <' + record.email + '>'
       };
 
-      return we.email.sendEmail('SiteContact',
-        options, templateVariables,
-      function (err) {
+      return we.email.sendEmail('SiteContact', options, templateVariables, (err)=> {
         if (err) {
           we.log.error('sitecontact:create SiteContact:', err);
           return res.serverError();
@@ -46,10 +44,19 @@ module.exports = {
 
         return res.created(record);
       });
-    }).catch(res.queryError);
+    })
+    .catch(res.queryError);
   },
-  contactIframe: function contactIframe(req, res) {
-    var we = req.getWe();
+
+  /**
+   * Site contact iframe action
+   * Send the contact iframe page to be used inside one iframe
+   *
+   * @param  {Object} req  express.js request
+   * @param  {Object} res  express.js response
+   */
+  contactIframe(req, res) {
+    const we = req.we;
 
     if (!req.user || !req.user.toJSON) {
       res.locals.currentUserJsonRecord = JSON.stringify(req.user);
@@ -71,7 +78,7 @@ module.exports = {
 
     res.locals.layout = false;
     res.locals.template = 'contact-form';
-    //path.resolve(__dirname, '..', 'templates/contact-form.hbs')
+
     res.view();
   }
 };

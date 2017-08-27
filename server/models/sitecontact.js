@@ -1,12 +1,8 @@
 /**
- * Site contact
- *
- * @module      :: Model
- * @description :: Site contact model
- *
+ * Site contact model
  */
 module.exports = function Model(we) {
-  var model = {
+  const model = {
     definition: {
       /**
        * User name
@@ -47,10 +43,7 @@ module.exports = function Model(we) {
         allowNull: false
       }
     },
-
-    options: {
-      classMethods: {}
-    }
+    options: {}
   }
   return model;
 }

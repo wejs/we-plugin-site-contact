@@ -3,7 +3,7 @@
  */
 
 module.exports = function loadPlugin(projectPath, Plugin) {
-  var plugin = new Plugin(__dirname);
+  const plugin = new Plugin(__dirname);
 
   // set plugin configs
   plugin.setConfigs({
