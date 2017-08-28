@@ -1,0 +1,18 @@
+{
+  "sitecontact.success.email.subject": "The message was send with success",
+  "sitecontact.message.subject": "Contact message to {{site.name}}",
+  "sitecontact.send.email": "The message was sent",
+  "sitecontact.link": "Contact",
+  "sitecontact.find": "Contact us messages",
+  "form-sitecontact-name": "Your name",
+  "form-placeholder-sitecontact-name": " ",
+  "form-helper-sitecontact-name": " ",
+  "form-sitecontact-email": "Your email",
+  "form-placeholder-sitecontact-email": " ",
+  "form-helper-sitecontact-email": " ",
+  "form-sitecontact-message": "Your message",
+  "form-placeholder-sitecontact-message": " ",
+  "form-helper-sitecontact-message": " ",
+  "form-sitecontact-submit": "Send",
+  "sitecontact.form.title": "Contact form"
+}

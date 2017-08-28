@@ -1,51 +1,109 @@
 module.exports = {
-  create(req, res) {
+  create(req, res, done) {
+    if (!res.locals.template) res.locals.template = res.locals.model + '/' + 'create';
+
+    if (!res.locals.data) res.locals.data = {};
+
     const we = req.we;
 
-    if (!req.ip) return res.badRequest();
+    if (req.method === 'POST') {
+      if (!req.ip) return res.badRequest();
+      req.body.ip = req.ip;
 
-    req.body.ip = req.ip;
+      req.we.antiSpam.recaptcha.verify(req, res, function afterCheckSpam(err, isSpam) {
+        if (err) return done(err);
 
-    res.locals.Model.create(req.body)
-    .then( (record)=> {
+        if (isSpam) {
+          req.we.log.warn('cfmessage.create: spambot found in recaptcha verify: ', req.ip, req.body.email);
 
-      const templateVariables = {
-        record: record,
-        site: {
-          name: we.config.appName
+          res.addMessage('warning', {
+            text: 'auth.register.spam',
+            vars: { email: req.body.email }
+          });
+
+          return res.queryError();
         }
-      };
 
-      if (!we.config.email.mailOptions.from) {
-        we.log.warn('we.config.email.emailOptions.from is required to send a sitecontact email.');
-        return res.created(record);
+        if (req.isAuthenticated()) req.body.creatorId = req.user.id;
+
+        res.locals.messageSend = false;
+        // set temp record for use in validation errors
+
+        req.we.utils._.merge(res.locals.record, req.body);
+
+        res.locals.Model.create(req.body)
+        .then( (record)=> {
+          res.locals.data = record;
+          res.locals.messageSend = true;
+
+          const templateVariables = {
+            record: record,
+            site: {
+              name: we.config.appName,
+              url: we.config.hostname
+            },
+            locale: we.config.i18n.defaultLocale
+          };
+
+          if (!we.config.email.mailOptions.from) {
+            we.log.warn('we.config.email.emailOptions.from is required to send a sitecontact email.');
+            res.created(record);
+            return null;
+          }
+
+          // send the emails in async
+
+          // reply to institucional
+          let emailContact = we.config.email.mailOptions.from;
+
+          if (we.systemSettings && we.systemSettings.emailContact) {
+            emailContact = we.systemSettings.emailContact;
+          }
+
+          we.email.sendEmail('SiteContactSuccess', {
+            email: record.email,
+            subject: req.__('sitecontact.success.email.subject', templateVariables),
+            replyTo: emailContact
+          }, templateVariables, function (err) {
+            if (err) {
+              we.log.error('sitecontact:create:sendEmail:SiteContactSuccess:', err);
+            }
+          });
+
+          we.email.sendEmail('SiteContact', {
+            email: record.email,
+            subject: req.__('sitecontact.subject', templateVariables),
+            to: emailContact,
+            replyTo: record.name + ' <' + record.email + '>'
+          }, templateVariables, (err)=> {
+            if (err) {
+              we.log.error('sitecontact:create:sendEmail:SiteContact:', err);
+            }
+          });
+
+          res.addMessage('success', {
+            text: 'sitecontact.send.email',
+            vars: { email: record.email }
+          }, {
+            email: record.email
+          });
+
+          res.goTo('/site-contact');
+          return null;
+        })
+        .catch(res.queryError);
+      }); // end capcha check
+    } else {
+      res.locals.data = {};
+      // if user is authenticated, preload its name and email:
+      if (req.isAuthenticated()) {
+        res.locals.data.name = req.user.displayName;
+        res.locals.data.email = req.user.email;
       }
 
-      const options = {
-        subject: req.__('we.email.sitecontact.subject', templateVariables),
-        to: we.config.email.mailOptions.from,
-        from: record.name + ' <' + record.email + '>'
-      };
-
-      return we.email.sendEmail('SiteContact', options, templateVariables, (err)=> {
-        if (err) {
-          we.log.error('sitecontact:create SiteContact:', err);
-          return res.serverError();
-        }
-
-        res.addMessage('warning', {
-          text: 'sitecontact.send.email',
-          vars: {
-            email: record.email
-          }
-        }, {
-          email: record.email
-        });
-
-        return res.created(record);
-      });
-    })
-    .catch(res.queryError);
+      res.status(200);
+      res.ok();
+    }
   },
 
   /**

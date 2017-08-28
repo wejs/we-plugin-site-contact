@@ -1,0 +1,18 @@
+{
+  "sitecontact.success.email.subject": "A mensagem foi enviada com sucesso",
+  "sitecontact.message.subject": "você recebeu uma nova mensagem de contato do site {{site.name}}",
+  "sitecontact.send.email": "A mensagem foi enviada com sucesso",
+  "sitecontact.link": "Entrar em contato",
+  "sitecontact.find": "Mensagens de contato",
+  "form-sitecontact-email": "Email de resposta",
+  "form-helper-sitecontact-email": "Digite o seu email",
+  "form-placeholder-sitecontact-email": " ",
+  "form-sitecontact-name": "Nome",
+  "form-helper-sitecontact-name": "Digite o seu nome",
+  "form-placeholder-sitecontact-name": " ",
+  "form-sitecontact-message": "Mensagem",
+  "form-helper-sitecontact-message": "Escreva a mensagem que você deseja enviar para os administradores do evento",
+  "form-placeholder-sitecontact-message": " ",
+  "form-sitecontact-submit": "Enviar",
+  "sitecontact.form.title": "Entrar em contato"
+}

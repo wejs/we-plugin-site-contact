@@ -1,0 +1,39 @@
+{
+  "title": "sitecontact.form.title",
+  "method": "post",
+
+  "fields": {
+    "name": {
+      "type": "text",
+      "allowNull": false
+    },
+    "email": {
+      "type": "email",
+      "defaultValue": "",
+      "validate": { "isEmail": true },
+      "allowNull": false
+    },
+    "phone": {
+      "type": "phone/cell",
+      "defaultValue": null,
+      "allowNull": true
+    },
+
+    "message": {
+      "type": "textarea",
+      "formFieldAttributes": {
+        "rows": 6
+      },
+      "allowNull": false
+    },
+    "recaptcha": {
+      "type": "recaptcha"
+    }
+  },
+  "actions": {
+    "submit": {
+      "type": "submit",
+      "defaultValue": "save"
+    }
+  }
+}

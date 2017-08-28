@@ -16,50 +16,37 @@ module.exports = function loadPlugin(projectPath, Plugin) {
         'title': 'Manage contact messages',
         'description': ''
       }
+    },
+    forms: {
+      'sitecontact': __dirname + '/server/forms/sitecontact.json'
     }
   });
 
-  // ser plugin routes
+  // set plugin routes
   plugin.setRoutes({
-    'get /sitecontact': {
-      controller    : 'sitecontact',
-      action        : 'find',
-      model         : 'sitecontact',
-      permission    : 'manage_contact_message'
-    },
-    'get /sitecontact/:id([0-9]+)': {
-      controller    : 'sitecontact',
-      model         : 'sitecontact',
-      action        : 'findOne',
-      permission    : 'manage_contact_message'
-    },
-    'post /sitecontact': {
+    // contact form:
+    'get /site-contact': {
       controller    : 'sitecontact',
       action        : 'create',
       model         : 'sitecontact',
-      //permission    : true
+      permission    : 'create_contact_message'
+      // permission    : true
     },
-    'put /sitecontact/:id([0-9]+)': {
+    'post /site-contact': {
       controller    : 'sitecontact',
+      action        : 'create',
       model         : 'sitecontact',
-      action        : 'edit',
-      permission    : 'manage_contact_message'
+      permission    : 'create_contact_message'
     },
-    'delete /sitecontact/:id([0-9]+)': {
-      controller    : 'sitecontact',
-      model         : 'sitecontact',
-      action        : 'delete',
-      permission    : 'manage_contact_message'
-    },
-
     'get /widget/contact-form': {
       controller    : 'sitecontact',
       model         : 'sitecontact',
       action        : 'contactIframe',
       // /permission    : true
-    },
-
+    }
   });
+
+  plugin.setResource({ name: 'sitecontact' });
 
   return plugin;
 };
