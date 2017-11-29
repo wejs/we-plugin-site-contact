@@ -84,7 +84,12 @@ module.exports = function sitecontactModel(we) {
       }
     },
 
-    associations: {},
+    associations: {
+      form: {
+        type: 'belongsTo',
+        model: 'sitecontact-form'
+      }
+    },
 
     options: {
       classMethods: {}

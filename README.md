@@ -1,6 +1,6 @@
 # we-plugin-site-contact
 
-We.js site contact plugin for add the /sitecontact page and one contact widget
+We.js site contact plugin for add the /site-contact page and one contact widget
 
 ## Features
 

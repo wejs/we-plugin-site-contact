@@ -7,6 +7,9 @@
       "type": "text",
       "allowNull": false
     },
+    "subject": {
+      "type": "sitecontact/subject-selector"
+    },
     "email": {
       "type": "email",
       "defaultValue": "",

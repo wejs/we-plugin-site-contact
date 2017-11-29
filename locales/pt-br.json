@@ -14,5 +14,7 @@
   "form-helper-sitecontact-message": "Escreva a mensagem que você deseja enviar para os administradores do evento",
   "form-placeholder-sitecontact-message": " ",
   "form-sitecontact-submit": "Enviar",
-  "sitecontact.form.title": "Entrar em contato"
+  "sitecontact.form.title": "Entrar em contato",
+  "form-sitecontact-subject": "Assunto do contato",
+  "form-helper-sitecontact-subject": "Selecione um assunto relácionado com o campo acima"
 }

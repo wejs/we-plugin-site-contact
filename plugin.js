@@ -46,7 +46,19 @@ module.exports = function loadPlugin(projectPath, Plugin) {
     }
   });
 
+  plugin.selectContactFormMD = require('./lib/selectContactFormMD');
+
+  plugin.sendContactEmail = function sendContactEmail() {
+
+  };
+
+  plugin.sendContactEmailWithSubject = function sendContactEmailWithSubject() {
+
+  };
+
+
   plugin.setResource({ name: 'sitecontact' });
+  plugin.setResource({ name: 'sitecontact-form' });
 
   return plugin;
 };

@@ -1,0 +1,35 @@
+{{#if locals.contactForms.length}}
+  <div class="form-group {{#if error}}has-error has-feedback{{/if}}">
+    <label for="{{fieldId}}">{{t fieldName}} {{#ifCond field.allowNull false}}*{{/ifCond}}</label>
+    {{{field-help-error error}}}
+
+    <select id="{{fieldId}}" name="{{name}}" class="form-control" {{fieldAttrs}} >
+      {{#if locals.req.query.form}}
+        <option>Contatar um administrador</option>
+        {{#each locals.contactForms}}
+
+          {{#ifCond ../locals.req.query.form id}}
+            <option selected="selected" value="{{id}}">{{subject}}</option>
+          {{else}}
+            <option value="{{id}}">{{subject}}</option>
+          {{/ifCond}}
+
+        {{/each}}
+      {{else}}
+        <option selected="selected">Contatar um administrador</option>
+
+        {{#each locals.contactForms}}
+          <option value="{{id}}">{{subject}}</option>
+        {{/each}}
+
+      {{/if}}
+    </select>
+
+    <p class="help-block">{{t help}}</p>
+    {{{field-help-error error}}}
+  </div>
+
+{{else}}
+  <input type="hidden" name="{{name}}" value="{{value}}">
+{{/if}}
+
