@@ -10,7 +10,8 @@ module.exports = function sitecontactFormModel(we) {
       },
       contactWithEmail: {
         type: we.db.Sequelize.TEXT,
-        allowNull: false
+        allowNull: false,
+        skipSanitizer: true
       },
       emailBody: {
         type: we.db.Sequelize.TEXT,
