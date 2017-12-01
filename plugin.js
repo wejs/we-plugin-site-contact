@@ -19,6 +19,67 @@ module.exports = function loadPlugin(projectPath, Plugin) {
     },
     forms: {
       'sitecontact': __dirname + '/server/forms/sitecontact.json'
+    },
+    emailTypes: {
+      siteContact: {
+        label: 'Email de contato do site',
+        templateVariables: {
+          name: {
+            example: 'Alberto Souza',
+            description: 'Nome da pessoa ou organização que está entrando em contato'
+          },
+          phone: {
+            example: '123456789',
+            description: 'Telefone da pessoa ou organização'
+          },
+          email: {
+            example: 'contact@linkysysytems.com',
+            description: 'Email da pessoa ou organização que está entrando em contato'
+          },
+          message: {
+            example: 'Example message',
+            description: 'Mensagem da pessoa ou organização que está entrando em contato'
+          },
+          ip: {
+            example: '0.0.0.0',
+            description: 'IP da pessoa ou organização que está entrando em contato'
+          },
+          siteName: {
+            example: 'Site Name',
+            description: 'Nome deste site'
+          },
+          siteUrl: {
+            example: '/#example',
+            description: 'Endereço deste site'
+          }
+        }
+      },
+      siteContactSuccess: {
+        label: 'Email de confirmação de envio do contato do site',
+        templateVariables: {
+          name: {
+            description: 'Nome da pessoa ou organização que está entrando em contato'
+          },
+          phone: {
+            description: 'Telefone da pessoa ou organização'
+          },
+          email: {
+            description: 'Email da pessoa ou organização que está entrando em contato'
+          },
+          message: {
+            description: 'Mensagem da pessoa ou organização que está entrando em contato'
+          },
+          ip: {
+            description: 'IP da pessoa ou organização que está entrando em contato'
+          },
+          siteName: {
+            description: 'Nome deste site'
+          },
+          siteUrl: {
+            description: 'Endereço deste site'
+          }
+        }
+      }
     }
   });
 

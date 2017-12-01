@@ -57,12 +57,13 @@ module.exports = {
             }
 
             const templateVariables = {
-              record: record,
-              site: {
-                name: appName,
-                url: we.config.hostname
-              },
-              locale: we.config.i18n.defaultLocale
+              name: record.name,
+              email: record.email,
+              phone: record.phone,
+              message: record.message,
+              ip: record.ip,
+              siteName: appName,
+              siteUrl: we.config.hostname
             };
 
             if (!we.config.email.mailOptions.from) {
@@ -84,7 +85,7 @@ module.exports = {
               emailContact = res.locals.selectedForm.contactWithEmail;
             }
 
-            we.email.sendEmail('SiteContactSuccess', {
+            we.email.sendEmail('siteContactSuccess', {
               email: record.email,
               subject: req.__('sitecontact.success.email.subject', templateVariables),
               replyTo: emailContact
@@ -94,7 +95,7 @@ module.exports = {
               }
             });
 
-            we.email.sendEmail('SiteContact', {
+            we.email.sendEmail('siteContact', {
               email: record.email,
               subject: (
                 res.locals.selectedForm.subject ||
