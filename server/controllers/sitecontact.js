@@ -86,7 +86,7 @@ module.exports = {
             }
 
             we.email.sendEmail('siteContactSuccess', {
-              email: record.email,
+              to: record.email,
               replyTo: emailContact
             }, templateVariables, function (err) {
               if (err) {
@@ -95,7 +95,6 @@ module.exports = {
             });
 
             we.email.sendEmail('siteContact', {
-              email: record.email,
               subject: res.locals.selectedForm.subject,
               to: emailContact,
               replyTo: record.name + ' <' + record.email + '>'
