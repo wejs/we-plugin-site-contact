@@ -1,37 +1,59 @@
-var projectPath = process.cwd();
-var fs = require('fs-extra');
-var path = require('path');
-var async = require('async');
-var testTools = require('we-test-tools');
-var we;
+const projectPath = process.cwd(),
+  deleteDir = require('rimraf'),
+  path = require('path'),
+  async = require('async'),
+  testTools = require('we-test-tools'),
+  We = require('we-core');
+
+let we;
 
 before(function(callback) {
   this.slow(100);
 
   testTools.copyLocalConfigIfNotExitst(projectPath, function() {
-    we = require('we-core');
-
+    we = new We();
     testTools.init({}, we);
 
     we.bootstrap({
+      // disable access log
+      enableRequestLog: false,
+
       i18n: {
-        directory: path.join(__dirname, 'locales'),
-        updateFiles: true
-      }
-    } , function(err, we) {
-      if (err) return console.error(err);
+        directory: path.resolve(__dirname, '..', 'config/locales'),
+        updateFiles: true,
+        locales: ['en-us']
+      },
+      themes: {}
+    }, (err)=>{
+       if (err) return console.error(err);
+       callback(err);
+    });
+  });
+});
 
-      we.startServer(function(err) {
-        if (err) return console.error(err);
-        callback();
-      })
-    })
+before(function(callback) {
+  we.plugins['we-plugin-site-contact'] = we.plugins.project;
 
-  })
-})
+  we.startServer(callback);
+});
 
 //after all tests
 after(function (callback) {
-  we.db.defaultConnection.close();
-  callback();
+  const tempFolders = [
+    projectPath + '/files/tmp',
+    projectPath + '/files/config',
+    projectPath + '/files/sqlite',
+    projectPath + '/config/local.js',
+  ];
+
+  async.each(tempFolders, (folder, next)=> {
+    deleteDir( folder, next);
+  }, (err)=> {
+    if (err) throw new Error(err);
+    callback();
+  });
+});
+
+after(function () {
+  we.exit(process.exit);
 });

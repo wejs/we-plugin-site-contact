@@ -1,20 +1,21 @@
-var assert = require('assert');
-var request = require('supertest');
-var helpers = require('we-test-tools').helpers;
-var stubs = require('we-test-tools').stubs;
-var _ = require('lodash');
-var http;
-var we;
+const assert = require('assert'),
+  request = require('supertest'),
+  helpers = require('we-test-tools').helpers,
+  stubs = require('we-test-tools').stubs;
+
+let _, http, we;
 
 describe('sitecontact-formFeature', function () {
-  var salvedPage, salvedUser, salvedUserPassword;
-  var authenticatedRequest;
+  let salvedUser, salvedUserPassword;
+  let authenticatedRequest;
 
   before(function (done) {
     http = helpers.getHttp();
     we = helpers.getWe();
 
-    var userStub = stubs.userStub();
+    _ = we.utils._;
+
+    let userStub = stubs.userStub();
     helpers.createUser(userStub, function(err, user) {
       if (err) throw err;
 
@@ -31,7 +32,7 @@ describe('sitecontact-formFeature', function () {
       })
       .expect(200)
       .set('Accept', 'application/json')
-      .end(function (err, res) {
+      .end(function (err) {
         if (err) throw err;
 
         done();
@@ -47,8 +48,8 @@ describe('sitecontact-formFeature', function () {
       .set('Accept', 'application/json')
       .end(function (err, res) {
         assert.equal(200, res.status);
-        assert(res.body.sitecontact-form);
-        assert( _.isArray(res.body.sitecontact-form) , 'sitecontact-form not is array');
+        assert(res.body['sitecontact-form']);
+        assert( _.isArray(res.body['sitecontact-form']) , 'sitecontact-form not is array');
         assert(res.body.meta);
 
         done();

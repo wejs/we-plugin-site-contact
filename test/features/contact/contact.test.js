@@ -1,14 +1,11 @@
-var assert = require('assert');
-var request = require('supertest');
-var testTools = require('we-test-tools');
-var async = require('async');
-var _ = require('lodash');
-var http;
-var we;
-var agent;
+const assert = require('assert'),
+  request = require('supertest'),
+  testTools = require('we-test-tools');
+
+let _, async, http, we, agent;
 
 describe('contactFeature', function() {
-  var salvedUser, salvedUserPassword, authenticatedRequest, authToken;
+  let salvedUser, salvedUserPassword, authenticatedRequest, authToken;
 
   before(function (done) {
     http = testTools.helpers.getHttp();
@@ -16,6 +13,15 @@ describe('contactFeature', function() {
 
     we = testTools.helpers.getWe();
     we.config.acl.disabled = true;
+
+    _ = we.utils._;
+    async = we.utils.async;
+
+    we.config.email = {
+      mailOptions: {
+        from: 'test@example.com'
+      }
+    };
 
     async.parallel([
       function connectUser(done){
@@ -33,7 +39,7 @@ describe('contactFeature', function() {
   });
 
   describe('unAuthenticated', function() {
-    it ('post /sitecontact with json request should create one register and send contact email', function (done) {
+    it ('post /sitecontact with json request should create one record and send contact email', function (done) {
       var record = {
         name: 'Alberto Souza',
         email: 'alberto.souza.99@gmail.com',
@@ -45,14 +51,45 @@ describe('contactFeature', function() {
       .post('/sitecontact')
       .send(record)
       .set('Accept', 'application/json')
-      .expect(201)
-      .end(function (err, res) {
+      .expect(302)
+      .end(function (err) {
         if (err) throw err;
-        assert(res.body.sitecontact);
-        assert(res.body.sitecontact[0].id);
-        done();
+
+        we.db.models.sitecontact
+        .findOne({ where: record })
+        .then( (r)=> {
+          assert(r, 'Record should be salved in DB');
+          done();
+          return null;
+        })
+        .catch(done);
+
+
       });
     });
+
+    // it ('post /sitecontact should send emails with custom subjects', function (done) {
+    //   var record = {
+    //     name: 'testes2',
+    //     subject: '1',
+    //     email: 'alberto.souza.99@gmail.com',
+    //     phone: '21976434196',
+    //     message: 'testes2',
+    //     submit: 'save'
+    //   };
+
+    //   request(http)
+    //   .post('/sitecontact')
+    //   .send(record)
+    //   .set('Accept', 'application/json')
+    //   .expect(201)
+    //   .end(function (err, res) {
+    //     if (err) throw err;
+    //     assert(res.body.sitecontact);
+    //     assert(res.body.sitecontact[0].id);
+    //     done();
+    //   });
+    // });
 
     // it ('post /sitecontact should create one register and send contact email', function (done) {
     //   var record = {
