@@ -45,6 +45,8 @@ module.exports = {
 
           req.we.utils._.merge(res.locals.record, req.body);
 
+          req.body.formId = res.locals.selectedForm.id;
+
           res.locals.Model.create(req.body)
           .then( (record)=> {
             res.locals.data = record;
