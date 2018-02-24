@@ -27,9 +27,11 @@ NODE_ENV=test LOG_LV=info ./node_modules/.bin/mocha test/bootstrap.js test/**/*.
 npm run lint
 ```
 
-#### NPM Info:
-[![NPM](https://nodei.co/npm/we-plugin-site-contact.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/we-plugin-site-contact/)
-
 ## Copyright and license
 
 Copyright Alberto Souza <contact@albertosouza.net> and contributors , under [the MIT license](LICENSE).
+
+## Sponsored by
+
+- Linky Systems: https://linkysystems.com
+
