@@ -21,6 +21,7 @@ module.exports = function (projectPath, Widget) {
   // // Widget view middleware, use for get data after render the widget html
   widget.viewMiddleware = function viewMiddleware(w, req, res, next) {
     const we = req.we;
+    const Op = we.Op;
 
     if (!w.data) w.data = {};
 
@@ -34,9 +35,9 @@ module.exports = function (projectPath, Widget) {
     .findAll({
       where: {
         publishedAt: {
-          $or: {
-            $eq: null,
-            $lte: new Date()
+          [Op.or]: {
+            [Op.eq]: null,
+            [Op.lte]: new Date()
           }
         }
       }
