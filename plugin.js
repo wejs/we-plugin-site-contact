@@ -23,6 +23,23 @@ module.exports = function loadPlugin(projectPath, Plugin) {
     emailTypes: {
       siteContact: {
         label: 'Email de contato do site',
+        defaultSubject: `Nova mensagem de contato no site {{siteName}}`,
+        defaultHTML: `<p>O site {{siteName}} acaba de receber uma nova mensagem de contato:</p>
+<p>{{message}}<br /><br />Enviada por:<br />Nome: {{name}}<br />Email {{email}}<br />Telefone {{phone}}<br /><br /></p>
+<p>Atenciosamente,<br />{{siteName}}<br />{{siteUrl}}</p>`,
+        defaultText: `O site {{siteName}} acaba de receber uma nova mensagem de contato:
+
+{{message}}
+
+Enviada por:
+Nome: {{name}}
+Email {{email}}
+Telefone {{phone}}
+
+
+Atenciosamente,
+{{siteName}}
+{{siteUrl}}`,
         templateVariables: {
           name: {
             example: 'Alberto Souza',
