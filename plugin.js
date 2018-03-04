@@ -73,6 +73,17 @@ Atenciosamente,
       },
       siteContactSuccess: {
         label: 'Email de confirmação de envio do contato do site',
+        defaultSubject: `Mensagem enviada com sucesso {{siteName}}`,
+        defaultHTML: `<p>Obrigado por entrar em contato com o site {{siteName}}.</p>
+<p>Sua mensagem foi recebida e ser&aacute; analisada pela nossa equipe em breve.<br /><br /></p>
+<p>Atenciosamente,<br />{{siteName}}<br />{{siteUrl}}</p>`,
+        defaultText: `Obrigado por entrar em contato com o site {{siteName}}.
+
+Sua mensagem foi recebida e será analisada pela nossa equipe em breve.
+
+Atenciosamente,
+{{siteName}}
+{{siteUrl}}`,
         templateVariables: {
           name: {
             description: 'Nome da pessoa ou organização que está entrando em contato'
