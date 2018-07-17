@@ -1,6 +1,7 @@
 {
   "title": "sitecontact.form.title",
   "method": "post",
+  "action": "/site-contact",
 
   "fields": {
     "name": {
