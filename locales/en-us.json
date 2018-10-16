@@ -14,5 +14,6 @@
   "form-placeholder-sitecontact-message": " ",
   "form-helper-sitecontact-message": " ",
   "form-sitecontact-submit": "Send",
-  "sitecontact.form.title": "Contact form"
+  "sitecontact.form.title": "Contact form",
+  "form-placeholder-sitecontact-subject": "Subject"
 }

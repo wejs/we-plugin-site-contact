@@ -30,9 +30,16 @@
   </div>
 
 {{else}}
-  <input type="hidden" name="{{name}}" value="{{value}}">
+  {{#if locals.req.we.config.enableCustomSiteContactSubject}}
+
+    <div class="form-group {{#if error}}has-error has-feedback{{/if}}">
+      <label for="{{fieldId}}">{{{label}}} {{#ifCond field.allowNull false}}*{{/ifCond}}</label>
+      <input id="{{fieldId}}" name="customSubject" type="text" class="form-control" placeholder="{{{placeholder}}}" {{{fieldAttrs}}} value="{{value}}">
+      <p class="help-block">{{{help}}}</p>
+      {{{field-help-error error}}}
+    </div>
+
+  {{else}}
+    <input type="hidden" name="{{name}}" value="{{value}}">
+  {{/if}}
 {{/if}}
-
-
-<input type="hidden" name="{{name}}" value="{{value}}">
-

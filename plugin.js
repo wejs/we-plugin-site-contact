@@ -7,6 +7,7 @@ module.exports = function loadPlugin(projectPath, Plugin) {
 
   // set plugin configs
   plugin.setConfigs({
+    enableCustomSiteContactSubject: false,
     permissions: {
       'create_contact_message': {
         'title': 'Create contact message',

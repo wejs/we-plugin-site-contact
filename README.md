@@ -7,6 +7,14 @@ We.js site contact plugin for add the /site-contact page and one contact widget
 - Contact form iframe
 - Contact email
 
+## Settings:
+
+### Change subject field to open text field
+
+```
+we.config.enableCustomSiteContactSubject = true
+```
+
 ### How to test
 
 after clone and install npm packages:

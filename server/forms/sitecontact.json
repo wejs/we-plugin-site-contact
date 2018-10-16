@@ -8,9 +8,6 @@
       "type": "text",
       "allowNull": false
     },
-    "subject": {
-      "type": "sitecontact/subject-selector"
-    },
     "email": {
       "type": "email",
       "defaultValue": "",
@@ -22,7 +19,9 @@
       "defaultValue": null,
       "allowNull": true
     },
-
+    "subject": {
+      "type": "sitecontact/subject-selector"
+    },
     "message": {
       "type": "textarea",
       "formFieldAttributes": {

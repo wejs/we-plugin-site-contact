@@ -49,6 +49,25 @@ module.exports = function sitecontactModel(we) {
         allowNull: false
       },
       /**
+       * Message subject
+       */
+      customSubject: {
+        type: we.db.Sequelize.STRING(1500),
+        allowNull: true,
+        set(v) {
+          if (!v || !v.length) {
+            this.setDataValue('customSubject', null);
+          } else if(v.length) {
+            if (v.length >= 1500) {
+              this.setDataValue('customSubject', v.substring(0, 1499));
+            } else {
+              this.setDataValue('customSubject', v);
+            }
+          }
+        }
+      },
+
+      /**
        * Message status,
        * @type {Object}
        */

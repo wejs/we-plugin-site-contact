@@ -23,6 +23,23 @@ module.exports = {
           return null;
         });
       }
+    }, {
+      version: '2.1.0',
+      update(we, done) {
+        const sql = 'ALTER TABLE `sitecontacts` '+
+          ' ADD COLUMN `customSubject` VARCHAR(1500) NULL DEFAULT NULL;';
+        we.db.defaultConnection
+        .query(sql)
+        .then( ()=> {
+          done();
+          return null;
+        })
+        .catch( (err)=> {
+          we.log.warn(err);
+          done();
+          return null;
+        });
+      }
     }];
   }
 };

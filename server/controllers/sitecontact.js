@@ -41,11 +41,24 @@ module.exports = {
           if (req.isAuthenticated()) req.body.creatorId = req.user.id;
 
           res.locals.messageSend = false;
-          // set temp record for use in validation errors
+          // set temp record for use in error validation
 
           req.we.utils._.merge(res.locals.record, req.body);
 
           req.body.formId = res.locals.selectedForm.id;
+
+          let subject = res.locals.selectedForm.subject;
+
+          if (
+            we.config.enableCustomSiteContactSubject &&
+            req.body.customSubject
+          ) {
+            subject = req.body.customSubject;
+          }
+
+          req.body.customSubject = subject;
+
+          console.log('req.body.customSubject>>', req.body.customSubject);
 
           res.locals.Model.create(req.body)
           .then( (record)=> {
@@ -97,7 +110,7 @@ module.exports = {
             });
 
             we.email.sendEmail('siteContact', {
-              subject: res.locals.selectedForm.subject,
+              subject: subject,
               to: emailContact,
               replyTo: record.name + ' <' + record.email + '>'
             }, templateVariables, (err)=> {

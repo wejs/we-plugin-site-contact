@@ -18,5 +18,6 @@
   "form-sitecontact-subject": "Assunto do contato",
   "form-helper-sitecontact-subject": "Selecione um assunto relácionado com o campo acima",
   "widget.sitecontact-form.label": "Formulário de contato do site",
-  "widget.sitecontact-form.description": "Widget com o formulário de contato do site que os usuários podem preencher e enviar mensagems para os administradores"
+  "widget.sitecontact-form.description": "Widget com o formulário de contato do site que os usuários podem preencher e enviar mensagems para os administradores",
+  "form-placeholder-sitecontact-subject": "Assunto"
 }
