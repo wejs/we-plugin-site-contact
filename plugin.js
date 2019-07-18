@@ -112,21 +112,27 @@ Atenciosamente,
     }
   });
 
-  // set plugin routes
+  plugin.siteContactTitlehandler = require('./lib/siteContactTitlehandler.js');
+  plugin.siteContactMetatagHandler = require('./lib/siteContactMetatagHandler.js');
+
   plugin.setRoutes({
     // contact form:
     'get /site-contact': {
       controller    : 'sitecontact',
       action        : 'create',
       model         : 'sitecontact',
-      permission    : 'create_contact_message'
+      permission    : 'create_contact_message',
+      titleHandler: plugin.siteContactTitlehandler,
+      metatagHandler: plugin.siteContactMetatagHandler
       // permission    : true
     },
     'post /site-contact': {
       controller    : 'sitecontact',
       action        : 'create',
       model         : 'sitecontact',
-      permission    : 'create_contact_message'
+      permission    : 'create_contact_message',
+      titleHandler  : plugin.siteContactTitlehandler,
+      metatagHandler: plugin.siteContactMetatagHandler
     },
     'get /widget/contact-form': {
       controller    : 'sitecontact',
