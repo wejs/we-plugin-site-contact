@@ -41,5 +41,6 @@ Copyright Alberto Souza <contact@albertosouza.net> and contributors , under [the
 
 ## Sponsored by
 
-- Linky Systems: https://linkysystems.com
+- Linky: https://linkysystems.com
+
 

@@ -10,7 +10,7 @@ let we;
 before(function(callback) {
   this.slow(100);
 
-  testTools.copyLocalConfigIfNotExitst(projectPath, function() {
+  testTools.copyLocalSQLiteConfigIfNotExists(projectPath, function() {
     we = new We();
     testTools.init({}, we);
 
@@ -33,7 +33,6 @@ before(function(callback) {
 
 before(function(callback) {
   we.plugins['we-plugin-site-contact'] = we.plugins.project;
-
   we.startServer(callback);
 });
 

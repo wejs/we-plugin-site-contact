@@ -113,6 +113,6 @@ module.exports = function sitecontactModel(we) {
     options: {
       classMethods: {}
     }
-  }
+  };
   return model;
-}
+};

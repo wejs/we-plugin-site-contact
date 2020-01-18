@@ -20,7 +20,6 @@ module.exports = {
         .catch( (err)=> {
           we.log.warn(err);
           done();
-          return null;
         });
       }
     }, {
@@ -32,12 +31,10 @@ module.exports = {
         .query(sql)
         .then( ()=> {
           done();
-          return null;
         })
         .catch( (err)=> {
-          we.log.warn(err);
+          we.log.warn('we-plugin-contact:update:Error on alter sitecontacts table', err);
           done();
-          return null;
         });
       }
     }];

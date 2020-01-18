@@ -30,6 +30,6 @@ module.exports = function sitecontactFormModel(we) {
     options: {
       classMethods: {}
     }
-  }
+  };
   return model;
-}
+};

@@ -13,14 +13,12 @@ module.exports = {
 
     plugin.selectContactFormMD(req, res, (err)=> {
       if (err) {
-        res.queryError(err);
-        return null;
+        return res.queryError(err);
       }
 
       if (req.method === 'POST') {
         if (!req.ip) {
-          res.badRequest();
-          return null;
+          return res.badRequest();
         }
         req.body.ip = req.ip;
 
@@ -83,8 +81,7 @@ module.exports = {
 
             if (!we.config.email.mailOptions.from) {
               we.log.warn('we.config.email.emailOptions.from is required to send a sitecontact email.');
-              res.created(record);
-              return null;
+              return res.created(record);
             }
 
             // send the emails in async
@@ -126,17 +123,13 @@ module.exports = {
               email: record.email
             });
 
-            res.goTo('/site-contact');
-            return null;
+            return res.goTo('/site-contact');
           })
           .catch(res.queryError);
         }); // end capcha check
       } else {
         we.controllers.sitecontact.createPage(req, res, done);
       }
-
-      return null;
-
     });
   },
 
